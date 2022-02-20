@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrow Function</title>
+</head>
+<body>
+  <script>
+  // ES5
+  function add(a, b) {
+    return a + b;
+  }
+
+  // ES6
+  const add = function(a, b) {
+    return a + b;
+  }
+
+  // const add = (a, b) => {
+  //   return a + b;
+  // }
+
+  // const add = (a, b) => a + b;
+  
+  // const multiple = number => number * 2;
+
+  const showTwo = () => {
+    return 2;
+  }
+
+
+  // use arrow function in Object or Class
+  const team = {
+    members: ['Jane', 'Bill', 'Cindy'],
+    teamName: 'Super Squad',
+    teamSummary: function() {
+      // 1. var self = this;
+      return this.members.map(function(member) {
+        return `${member} is on team ${this.teamName}`; 
+        // 2. use .bind(this)
+        // 3. use arrow function
+      });
+    }
+  }
+
+  console.log(team.teamSummary());
+
+  </script>
+</body>
+</html>

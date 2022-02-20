@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Destrucuring</title>
+</head>
+<body>
+  <script>
+    
+    //  Destructuring(解構) with Object ------- (非常常用) 
+    const fruit = {
+      type: 'banana',
+      price: '$45 NTD',
+      amount: 30
+    };
+
+    const type = fruit.type;
+    const price = fruit.price;
+    const amount = fruit.amount;
+
+    // ES6
+    const { type } = fruit;
+    const { price } = fruit;
+    const { amount } = fruit;
+
+    const { type, price, amount } = fruit;
+
+
+    // 實例
+    const savedfiled = {
+      extension: 'jpg',
+      name: 'repost',
+      size: 14040
+    };
+
+    function fileSummary(file) {
+      return `The file ${file.name}.${file.extension} is of size ${file.size}`;
+    }
+
+    // ES6
+    function fileSummary({ name, extension, size }) {
+      return `The file ${name}.${extension} is of size ${size}`;
+    }
+
+    fileSummary(savedfiled);
+
+  </script>
+</body>
+</html>

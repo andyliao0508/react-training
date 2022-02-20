@@ -1,0 +1,113 @@
+:root {
+  --main-color: rgb(255, 233, 227);
+  --sub-color: rgb(255, 171, 147);
+  --third-color: rgb(253, 134, 101);
+  --word-black: rgb(55, 55, 55);
+}
+body {
+  font-family: MicroSoft JhengHei, sans-serif;
+  color: var(--word-black);
+  font-size: 18px;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  margin-bottom: 50px;
+}
+button {
+  cursor: pointer;
+}
+.nav {
+  display: inline-block; 
+}
+.nav a {
+  margin: 0 0 0 100px;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: var(--word-black);
+  border-bottom: 4px solid var(--main-color);
+}
+.nav a:hover {
+  text-decoration-line: none;
+}
+.container {
+  margin-top: 60px;
+}
+.logo {
+  width: 100px;
+  border-radius: 10px;
+}
+.myBtn {
+  padding: 3px 12px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+}
+.confirmBtn {
+  float: right;
+  background-color: var(--sub-color);
+  padding: 8px 20px;
+}
+.confirmBtn:hover {
+  background-color: var(--third-color);
+  color: white;
+}
+.orderBtn {
+  margin-top: 15px;
+}
+.orderAmount .myBtn{
+  margin-right: 20px;
+}
+.orderName {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 20px;
+}
+.orderName span, .ingredName span {
+  font-size: 14px;
+}
+.totalPrice {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.modal-backdrop {
+  background-color: rgba(255, 200, 185, 0.5);
+}
+.modal {
+  top: 30px;
+}
+.modal-header, .modal-body, .modal-footer {
+  padding: 1.2rem 2rem 1.2rem 3rem;
+}
+.modal .myBtn {
+  padding: 8px 12px;
+  margin-left: 15px;
+}
+.food {
+  font-size: 18px;
+  width: 300px;
+  height: 10px;
+  margin-bottom: 8px;
+  opacity: 0.6;
+  border-radius: 3px;
+}
+.bread {
+  height: 22px;
+  border: 2px solid black;
+}
+.tomato {
+  background-color: tomato;
+}
+.egg {
+  background-color: gold;
+}
+.ham {
+  background-color: firebrick;
+}
+.cucumber {
+  background-color: green;
+}

@@ -1,0 +1,38 @@
+ul {
+  margin-top: 30px;
+  padding-left: 60px;
+}
+.sampleForm label {
+  display: block;
+}
+.sampleForm input {
+  text-align: right;
+}
+input {
+  margin: 15px 0 0 15px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+}
+input[type="file"] {
+  color: dimgray;
+}
+.submitBtn {
+  margin-left: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.output {
+  margin-left: 20px;
+}
+.btn {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 15px;
+  border-radius: 5px;
+}
+.line {
+  width: 300px;
+  margin: 30px 0 30px 10px;
+  border-bottom: 2px dashed pink;
+}
